@@ -35,7 +35,11 @@ export class UsersService {
   }
 
   async findAll() {
-    return this.usersRepository.find();
+    return this.usersRepository
+      .createQueryBuilder('user')
+      .select('user.id', 'id')
+      .addSelect('user.email', 'email')
+      .getRawMany();
   }
 
   async showOne(id: number) {

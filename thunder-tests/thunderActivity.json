@@ -17,5 +17,24 @@
             "form": []
         },
         "tests": []
+    },
+    {
+        "_id": "c9c28b59-918c-4991-ac10-9e8a955e6bee",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000/auth",
+        "url": "http://localhost:3000/auth",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-07-11T14:30:01.449Z",
+        "modified": "2023-07-11T16:18:47.332Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"email\": \"mail@ml.fr\",\n  \"password\": \"123456\"\n}",
+            "form": []
+        },
+        "tests": []
     }
 ]
