@@ -5,6 +5,7 @@ import { Comment } from './src/items/entities/comment.entity';
 import { Item } from './src/items/entities/item.entity';
 import { Listing } from './src/items/entities/listing.entity';
 import { Tag } from './src/items/entities/tag.entity';
+import { User } from './src/users/entities/user.entity';
 
 config();
 
@@ -18,5 +19,5 @@ export default new DataSource({
   username: configService.getOrThrow('MYSQL_USERNAME'),
   password: configService.getOrThrow('MYSQL_PASSWORD'),
   migrations: ['migrations/**'],
-  entities: [Item, Listing, Comment, Tag],
+  entities: [Item, Listing, Comment, Tag, User],
 });

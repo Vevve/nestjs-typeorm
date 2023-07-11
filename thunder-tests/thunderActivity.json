@@ -4,16 +4,16 @@
         "colId": "history",
         "containerId": "",
         "name": "http://localhost:3000",
-        "url": "http://localhost:3000/items",
-        "method": "POST",
+        "url": "http://localhost:3000/users",
+        "method": "GET",
         "sortNum": 0,
         "created": "2023-07-10T13:29:59.557Z",
-        "modified": "2023-07-11T08:55:49.428Z",
+        "modified": "2023-07-11T13:44:35.004Z",
         "headers": [],
         "params": [],
         "body": {
             "type": "json",
-            "raw": "{\n  \"name\": \"Complex item 4--\",\n  \"public\": false,\n  \"listing\": {\n    \"description\": \"descccc 5\"\n  },\n  \"tags\": [\n    {\n      \"content\": \"tag 1\"\n    },\n    {\n      \"content\": \"tag 2\"\n    }\n  ]\n}",
+            "raw": "{\n  \"email\": \"1222\",\n  \"password\": \"123456\"\n}",
             "form": []
         },
         "tests": []
