@@ -1,0 +1,21 @@
+[
+    {
+        "_id": "aec156a0-ffe2-42b1-a3c2-80566097a33a",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:3000",
+        "url": "http://localhost:3000/items",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-07-10T13:29:59.557Z",
+        "modified": "2023-07-11T08:55:49.428Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"name\": \"Complex item 4--\",\n  \"public\": false,\n  \"listing\": {\n    \"description\": \"descccc 5\"\n  },\n  \"tags\": [\n    {\n      \"content\": \"tag 1\"\n    },\n    {\n      \"content\": \"tag 2\"\n    }\n  ]\n}",
+            "form": []
+        },
+        "tests": []
+    }
+]
