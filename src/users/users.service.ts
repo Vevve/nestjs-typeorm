@@ -13,7 +13,7 @@ export class UsersService {
     private readonly entityManager: EntityManager,
   ) {}
 
-  async findOne(id: number) {
+  async findById(id: number) {
     return this.usersRepository.findOneBy({ id });
   }
 
@@ -43,13 +43,13 @@ export class UsersService {
   }
 
   async showOne(id: number) {
-    const user = await this.findOne(id);
+    const user = await this.findById(id);
     delete user.password;
     return user;
   }
 
   async update(id: number, updateUserDto: UpdateUserDto) {
-    const user = await this.findOne(id);
+    const user = await this.findById(id);
     if (user) {
       user.email = updateUserDto.email;
       await this.entityManager.save(user);
