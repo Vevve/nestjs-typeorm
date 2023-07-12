@@ -10,9 +10,9 @@ import { AppController } from './app.controller';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     DatabaseModule,
+    AuthModule,
     ItemsModule,
     UsersModule,
-    AuthModule,
   ],
   controllers: [AppController],
   providers: [],
